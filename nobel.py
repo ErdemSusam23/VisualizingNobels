@@ -11,11 +11,15 @@ top_country = nobel["birth_country"].value_counts()
 #----------------PLOT 1----------------
 plt.figure(figsize=(10,6))
 #top_gender.plot(kind="bar", title = "Plot of Genders", xlabel = "Gender", ylabel = "Count")
+plt.show()
+
 
 
 #----------------PLOT 2----------------
 plt.clf()
 #top_country.head(10).plot(kind = "bar", title = "Plot of Countries", xlabel = "Country", ylabel="Count",)
+plt.show()
+
 
 
 print("Gender with the most nobel prizes: " + str(top_gender.index[0]))
@@ -32,6 +36,7 @@ proportion = proportion[::-1]
 #----------------PLOT 3----------------
 plt.clf()
 #proportion.plot(kind = "bar", title = "Plot of Proportion", xlabel="Decade", ylabel="Proportion", grid=True)
+plt.show()
 
 
 max_decade_usa = proportion.idxmax()
@@ -47,6 +52,7 @@ female_proportion = female_proportion[::-1]
 plt.clf()
 """female_proportion.sort_values(ascending = False).head(10).plot(kind="bar", xlabel="Decade", ylabel="Category", 
                                                                title="Plot of Female Proportions")"""
+plt.show()
 
 max_female_dict = {}
 max_decade_females = female_proportion.idxmax()
@@ -78,6 +84,7 @@ print("List of peoples or organizations who has won more than 1 nobel prize")
 for item in repeat_list:
     print(item)
 
+plt.show()
 
 
 
